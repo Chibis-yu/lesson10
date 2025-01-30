@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Якорные ссылки</title>
+</head>
+<body>
+
+<button onclick="scrollToSection('section1')">Go to Section 1</button>
+<button onclick="scrollToSection('section2')">Go to Section 2</button>
+<button onclick="scrollToSection('section3')">Go to Section 3</button>
+
+<h2 id="section1">Section 1</h2>
+<p>Content of Section 1</p>
+<h2 id="section2">Section 2</h2>
+<p>Content of Section 2</p>
+<h2 id="section3">Section 3</h2>
+<p>Content of Section 3</p>
+<nav>
+  <ul>
+    <li><a href="#section1">Go to Section 1</a></li>
+    <li><a href="#section2">Go to the Section 2</a></li>
+    <li><a href="#section3">Go to the Section 3</a></li>
+  </ul>
+</nav>
+</body>
+<script>
+  function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({behavior: 'smooth'});
+  }
+</script>
+</html>
